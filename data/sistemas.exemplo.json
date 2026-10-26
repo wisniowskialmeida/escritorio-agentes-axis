@@ -1,0 +1,249 @@
+{
+  "_leia": [
+    "Registro dos sistemas dos seus agentes. Na primeira vez que o escritório sobe, este arquivo é copiado para data/sistemas.json, e é esse que vale.",
+    "O jeito fácil de cadastrar é pela tela: aba Contratar > + Cadastrar agente. Ele grava aqui.",
+    "tipo 'local': o escritório sobe o sistema. Campos: pasta, comando, args, porta, env (opcional), abre.",
+    "tipo 'web': só abre o endereço. Campos: url.",
+    "O escritório só executa o que está neste arquivo, e recusa comando com & | ; < > ` $."
+  ],
+  "diretoria": {
+    "nome": "Direção · Vitor",
+    "tipo": "local",
+    "pasta": "agentes/diretoria",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4416"
+    },
+    "porta": 4416,
+    "abre": "/",
+    "sobre": "Sistema da Direção da AXIS. Junta os alertas de todas as áreas e mantém o plano de melhorias. Mostra o MRR, os clientes e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "atendimento": {
+    "nome": "Atendimento · Bia",
+    "tipo": "local",
+    "pasta": "agentes/atendimento",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4411"
+    },
+    "porta": 4411,
+    "abre": "/",
+    "sobre": "Sistema de Atendimento da AXIS. Responder rápido todo lead e levá-lo à aula experimental. Mostra os números da área e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "marketing": {
+    "nome": "Marketing · Mel",
+    "tipo": "local",
+    "pasta": "agentes/marketing",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4413"
+    },
+    "porta": 4413,
+    "abre": "/",
+    "sobre": "Sistema de Marketing da AXIS. Conteúdo e tráfego que geram aula experimental. Mostra campanhas, custo por lead e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "comercial": {
+    "nome": "Comercial · Caio",
+    "tipo": "local",
+    "pasta": "agentes/comercial",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4412"
+    },
+    "porta": 4412,
+    "abre": "/",
+    "sobre": "Sistema de Comercial da AXIS. Da aula experimental à matrícula, com meta do mês. Mostra o funil e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "juridico": {
+    "nome": "Jurídico · Théo",
+    "tipo": "local",
+    "pasta": "agentes/juridico",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4414"
+    },
+    "porta": 4414,
+    "abre": "/",
+    "sobre": "Sistema de Jurídico da AXIS. Contratos, termos e LGPD dos clientes. Mostra pendências e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "financeiro": {
+    "nome": "Financeiro · Rui",
+    "tipo": "local",
+    "pasta": "agentes/financeiro",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4415"
+    },
+    "porta": 4415,
+    "abre": "/",
+    "sobre": "Sistema de Financeiro da AXIS. Faturamento, inadimplência e custos (inclusive IA). Mostra o caixa e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "planejador": {
+    "nome": "Planejamento · Átila",
+    "tipo": "local",
+    "pasta": "agentes/planejador",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4417"
+    },
+    "porta": 4417,
+    "abre": "/",
+    "sobre": "Sistema de Planejamento (A Legião). Transforma pedidos em planos com passos e dono. Mostra o backlog e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "pesquisador": {
+    "nome": "Pesquisa · Íris",
+    "tipo": "local",
+    "pasta": "agentes/pesquisador",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4418"
+    },
+    "porta": 4418,
+    "abre": "/",
+    "sobre": "Sistema de Pesquisa (A Legião). Mercado, concorrência e benchmarks. Mostra as pesquisas e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "implementador": {
+    "nome": "Implementação · Dino",
+    "tipo": "local",
+    "pasta": "agentes/implementador",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4419"
+    },
+    "porta": 4419,
+    "abre": "/",
+    "sobre": "Sistema de Implementação (A Legião). Automações e integrações da operação. Mostra o que está no ar, falhando, e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "revisor": {
+    "nome": "Qualidade · Quim",
+    "tipo": "local",
+    "pasta": "agentes/revisor",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4420"
+    },
+    "porta": 4420,
+    "abre": "/",
+    "sobre": "Sistema de Qualidade / QA (A Legião). Revisa antes de ir ao cliente. Mostra as revisões e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "seguranca": {
+    "nome": "Segurança · Max",
+    "tipo": "local",
+    "pasta": "agentes/seguranca",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4421"
+    },
+    "porta": 4421,
+    "abre": "/",
+    "sobre": "Sistema de Segurança (A Legião). Protege dados, segredos e permissões (LGPD técnica). Mostra os riscos e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
+  "exemplo": {
+    "nome": "Agente de exemplo",
+    "tipo": "local",
+    "pasta": "exemplo-agente",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4401"
+    },
+    "porta": 4401,
+    "abre": "/",
+    "sobre": "Um sistema mínimo que vem junto com o escritório, para mostrar como ele liga, embute e conversa com um agente. Copie a pasta exemplo-agente como ponto de partida, ou cadastre o seu projeto pela tela.",
+    "dicas": [
+      "Clique em Ligar e o escritório sobe o node server.js desta pasta",
+      "Em Conversar, o Claude Code abre dentro da pasta do sistema e responde sobre ele",
+      "Para tirar o exemplo, apague a entrada \"exemplo\" deste arquivo e demita o agente"
+    ]
+  }
+}
