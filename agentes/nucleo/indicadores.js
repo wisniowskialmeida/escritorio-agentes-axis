@@ -182,6 +182,48 @@ function calcular(d, agora = new Date()) {
     };
   })();
 
+  /* ---------------- Conteúdo & Social ---------------- */
+  const conteudo = (() => {
+    const ps = d.posts || [];
+    const mesPosts = ps.filter(p => mesDe(p.data) === mesAtual);
+    const publicadosMes = mesPosts.filter(p => p.status === 'publicado');
+    const agendados = ps.filter(p => p.status === 'agendado');
+    const atrasados = ps.filter(p => p.status !== 'publicado' && p.data && diasDesde(p.data) > 0);
+    const alcanceMes = soma(publicadosMes, p => p.alcance);
+    const contatosMes = soma(publicadosMes, p => p.contatos);
+    const ativosClientes = (d.clientes || []).filter(c => c.ativo);
+    const semAgenda = ativosClientes.filter(cl => !ps.some(p => p.cliente === cl.id && p.status !== 'publicado'));
+    const semTema = ps.filter(p => !p.tema);
+
+    const melhorias = [];
+    if (atrasados.length) melhorias.push({ nivel: 'alta',
+      texto: `${plural(atrasados.length, 'post passou da data', 'posts passaram da data')} sem publicar: ${lista(atrasados.map(p => p.tema || p.rede || 'post'))}.`,
+      acao: 'Publicar ou reagendar hoje. Calendário furado quebra a constância que traz contato.' });
+    if (semAgenda.length) melhorias.push({ nivel: 'media',
+      texto: `${plural(semAgenda.length, 'academia cliente está', 'academias clientes estão')} sem post agendado: ${lista(semAgenda.map(c => c.nome))}.`,
+      acao: 'Montar pelo menos um reels e um carrossel por cliente para a semana.' });
+    if (mesPosts.length && !mesPosts.some(p => /aula|experim/i.test(p.tema || ''))) melhorias.push({ nivel: 'baixa',
+      texto: 'Nenhum post do mês com chamada para aula experimental.',
+      acao: 'Incluir o CTA "Agende sua aula" no conteúdo, para o post virar lead.' });
+    if (semTema.length >= 2) melhorias.push({ nivel: 'baixa',
+      texto: `${semTema.length} posts sem tema definido.`,
+      acao: 'Escrever o tema de cada post para não produzir no improviso.' });
+
+    return {
+      kpis: [
+        { rotulo: 'Posts no mês', valor: mesPosts.length, detalhe: `${publicadosMes.length} publicados` },
+        { rotulo: 'Agendados', valor: agendados.length, detalhe: atrasados.length ? `${atrasados.length} atrasados` : 'em dia', tom: atrasados.length ? 'ruim' : 'bom' },
+        { rotulo: 'Alcance no mês', valor: alcanceMes ? alcanceMes.toLocaleString('pt-BR') : '—', detalhe: 'dos publicados' },
+        { rotulo: 'Contatos gerados', valor: contatosMes, detalhe: 'no mês, pelos posts' }
+      ],
+      melhorias,
+      tabelas: [{
+        titulo: 'Posts do mês por formato', colunas: ['Formato', 'Posts', 'Contatos'],
+        linhas: Object.entries(mesPosts.reduce((o, p) => { const k = p.formato || '—'; o[k] = o[k] || [0, 0]; o[k][0]++; o[k][1] += (p.contatos || 0); return o; }, {})).map(([k, v]) => [k, v[0], v[1]])
+      }]
+    };
+  })();
+
   /* ---------------- Jurídico ---------------- */
   const juridico = (() => {
     const ct = d.contratos || [];
@@ -415,7 +457,7 @@ function calcular(d, agora = new Date()) {
     };
   })();
 
-  const areas = { atendimento, marketing, comercial, juridico, financeiro, planejador, pesquisador, implementador, revisor, seguranca };
+  const areas = { atendimento, marketing, conteudo, comercial, juridico, financeiro, planejador, pesquisador, implementador, revisor, seguranca };
 
   /* ---------------- Direção ---------------- */
   const diretoria = (() => {
@@ -462,7 +504,7 @@ function calcular(d, agora = new Date()) {
     };
   })();
 
-  return { diretoria, atendimento, marketing, comercial, juridico, financeiro, planejador, pesquisador, implementador, revisor, seguranca };
+  return { diretoria, atendimento, marketing, conteudo, comercial, juridico, financeiro, planejador, pesquisador, implementador, revisor, seguranca };
 }
 
 /** texto em Markdown para o agente ler (RELATORIO.md) e para o terminal */

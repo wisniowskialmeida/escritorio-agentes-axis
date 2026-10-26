@@ -28,6 +28,7 @@ Sua missão: Transformar pedidos vagos em planos passo a passo antes de executar
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

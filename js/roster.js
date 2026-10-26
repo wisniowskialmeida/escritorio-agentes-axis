@@ -113,9 +113,10 @@ const ROSTER = (() => {
       look: { skin: '#c9854f', hair: '#140f0c', style: 'cacheado', shirt: '#39ff14', pants: '#1b201b', glasses: null, beard: null }
     },
     {
-      key: 'social', name: 'Nina', role: 'Social Media', emoji: '📱', cat: 'sugerido',
-      desc: 'Planeja e agenda os posts das academias clientes e acompanha o que traz contato.',
-      why: 'Constância nas redes custa tempo; um agente só para isso libera o Marketing para a estratégia.',
+      key: 'conteudo', name: 'Nina', role: 'Conteúdo & Social', emoji: '📱', cat: 'detectado',
+      system: 'Conteúdo · Nina', sistema: 'conteudo',
+      desc: 'Planeja e agenda os posts das academias clientes e acompanha o formato que traz contato.',
+      why: 'Constância nas redes custa tempo; com o calendário em dia, todo cliente aparece e você só aprova.',
       look: { skin: '#e0a878', hair: '#5a3a22', style: 'longo', shirt: '#f472b6', pants: '#26222b', glasses: null, beard: null }
     }
   ];
@@ -128,7 +129,7 @@ const ROSTER = (() => {
   function defaults() {
     const base = BOSSES.map(b => Object.assign({}, b, { look: Object.assign({}, b.look) }));
     // começa com os dez agentes da AXIS (times + A Legião) já contratados
-    for (const k of ['atendimento', 'marketing', 'comercial', 'juridico', 'financeiro',
+    for (const k of ['atendimento', 'marketing', 'conteudo', 'comercial', 'juridico', 'financeiro',
                      'planejador', 'pesquisador', 'implementador', 'revisor', 'seguranca']) {
       const c = CATALOG.find(c => c.key === k);
       base.push(fromCatalog(c));

@@ -28,6 +28,7 @@ Sua missão: Contratos, termos de serviço e LGPD dos clientes e dos dados.
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

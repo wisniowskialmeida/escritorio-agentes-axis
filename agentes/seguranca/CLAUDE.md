@@ -28,6 +28,7 @@ Sua missão: Proteger dados, segredos e permissões; cuidar da LGPD técnica.
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

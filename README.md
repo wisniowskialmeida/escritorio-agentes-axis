@@ -46,6 +46,7 @@ e as listas para cadastrar e editar os dados.
 | Vitor | Direção | 4416 | clientes, MRR, ticket e o plano de melhorias de todas as áreas |
 | Bia | Atendimento | 4411 | leads, tempo de 1ª resposta, canais |
 | Mel | Marketing | 4413 | campanhas, leads por campanha e custo por lead |
+| Nina | Conteúdo & Social | 4422 | calendário de posts das academias e o formato que traz contato |
 | Caio | Comercial | 4412 | aulas experimentais, comparecimento, matrículas e meta do mês |
 | Théo | Jurídico | 4414 | contratos, LGPD (responsável por dados) e prazos |
 | Rui | Financeiro | 4415 | faturas, inadimplência e custos (inclusive IA) |

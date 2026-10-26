@@ -28,6 +28,7 @@ Sua missão: Transformar interesse em aula experimental, comparecimento e matrí
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

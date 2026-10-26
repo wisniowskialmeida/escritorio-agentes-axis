@@ -29,6 +29,10 @@ const AREAS = {
     nome: 'Marketing', agente: 'Mel', porta: 4413, cor: '#ff7a1a', sala: 'Marketing',
     missao: 'Conteúdo e tráfego que geram aula experimental, não só curtidas.'
   },
+  conteudo: {
+    nome: 'Conteúdo', agente: 'Nina', porta: 4422, cor: '#f472b6', sala: 'Marketing',
+    missao: 'Manter as redes das academias clientes ativas toda semana, no formato que traz contato.'
+  },
   comercial: {
     nome: 'Comercial', agente: 'Caio', porta: 4412, cor: '#ffc400', sala: 'Comercial',
     missao: 'Transformar interesse em aula experimental, comparecimento e matrícula.'
@@ -126,6 +130,23 @@ const COLECOES = {
         { k: 'investimento', t: 'dinheiro', r: 'Investimento', lista: true },
         { k: 'mes', t: 'mes', r: 'Mês', lista: true },
         { k: 'status', t: 'opcao', r: 'Situação', op: ['ativa', 'pausada', 'encerrada'], lista: true, padrao: 'ativa' }
+      ]
+    }
+  },
+
+  conteudo: {
+    posts: {
+      titulo: 'Calendário de posts', singular: 'post',
+      ordem: (a, b) => String(b.data || '').localeCompare(String(a.data || '')),
+      campos: [
+        { k: 'data', t: 'data', r: 'Data', lista: true, obrigatorio: true },
+        { k: 'cliente', t: 'ref', r: 'Academia', ref: 'clientes', lista: true },
+        { k: 'rede', t: 'opcao', r: 'Rede', op: ['Instagram', 'TikTok', 'YouTube', 'Facebook', 'WhatsApp'], lista: true, padrao: 'Instagram' },
+        { k: 'formato', t: 'opcao', r: 'Formato', op: ['reels', 'carrossel', 'story', 'foto', 'vídeo longo'], lista: true, padrao: 'reels' },
+        { k: 'tema', t: 'texto', r: 'Tema ou legenda curta', lista: true },
+        { k: 'status', t: 'opcao', r: 'Situação', op: ['ideia', 'produzindo', 'agendado', 'publicado'], lista: true, padrao: 'ideia' },
+        { k: 'alcance', t: 'numero', r: 'Alcance' },
+        { k: 'contatos', t: 'numero', r: 'Contatos gerados', lista: true }
       ]
     }
   },

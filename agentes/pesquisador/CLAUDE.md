@@ -28,6 +28,7 @@ Sua missão: Pesquisa de mercado, concorrência e benchmarks para embasar decis�
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

@@ -51,6 +51,15 @@ function gerar() {
       ]
     },
 
+    conteudo: {
+      posts: [
+        E({ id: 'pos-1', data: iso(dias(-2)), cliente: 'cli-1', rede: 'Instagram', formato: 'reels', tema: 'Técnica da semana', status: 'agendado', alcance: null, contatos: null }),
+        E({ id: 'pos-2', data: iso(dias(2)), cliente: 'cli-3', rede: 'Instagram', formato: 'carrossel', tema: 'Agende sua aula experimental grátis', status: 'agendado', alcance: null, contatos: null }),
+        E({ id: 'pos-3', data: iso(dias(-5)), cliente: 'cli-1', rede: 'Instagram', formato: 'reels', tema: 'Depoimento de aluno', status: 'publicado', alcance: 8200, contatos: 12 }),
+        E({ id: 'pos-4', data: iso(dias(-8)), cliente: 'cli-3', rede: 'Instagram', formato: 'story', tema: '', status: 'publicado', alcance: 3100, contatos: 4 })
+      ]
+    },
+
     comercial: {
       experimentais: [
         E({ id: 'exp-1', lead: 'lead-2', cliente: 'cli-1', data: isoH(dias(1)), compareceu: false, matriculou: false, valorPlano: null, status: 'agendada' }),

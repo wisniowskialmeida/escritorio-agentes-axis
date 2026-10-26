@@ -28,6 +28,7 @@ Sua missão: Conteúdo e tráfego que geram aula experimental, não só curtidas
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

@@ -28,6 +28,7 @@ Sua missão: Construir e manter as automações e integrações da operação.
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

@@ -66,6 +66,26 @@
       "Os dados de exemplo são apagados de uma vez no sistema da Direção"
     ]
   },
+  "conteudo": {
+    "nome": "Conteúdo · Nina",
+    "tipo": "local",
+    "pasta": "agentes/conteudo",
+    "comando": "node",
+    "args": [
+      "server.js"
+    ],
+    "env": {
+      "PORT": "4422"
+    },
+    "porta": 4422,
+    "abre": "/",
+    "sobre": "Sistema de Conteúdo da AXIS (Social Media). Calendário de posts das academias clientes e o formato que traz contato. Mostra os posts e o que melhorar agora.",
+    "dicas": [
+      "Clique numa linha da lista para editar; \"+\" cadastra um item novo",
+      "Em Conversar, pergunte o que melhorar: o agente lê o RELATORIO.md da pasta dele",
+      "Os dados de exemplo são apagados de uma vez no sistema da Direção"
+    ]
+  },
   "comercial": {
     "nome": "Comercial · Caio",
     "tipo": "local",

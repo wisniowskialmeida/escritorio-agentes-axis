@@ -28,6 +28,7 @@ Sua missão: Responder rápido todo interessado e levá-lo até a aula experimen
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

@@ -28,6 +28,7 @@ Sua missão: Faturamento, repasses, caixa e custo de IA e ferramentas por client
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

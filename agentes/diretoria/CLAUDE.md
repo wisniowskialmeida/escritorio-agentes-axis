@@ -28,6 +28,7 @@ Sua missão: Juntar o que cada área vê e transformar em um plano de melhorias 
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro

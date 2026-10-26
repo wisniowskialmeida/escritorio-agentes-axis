@@ -28,6 +28,7 @@ Sua missão: Garantir qualidade: rodar os checks e revisar antes de ir ao client
 - Vitor: Direção
 - Bia: Atendimento
 - Mel: Marketing
+- Nina: Conteúdo
 - Caio: Comercial
 - Théo: Jurídico
 - Rui: Financeiro
