@@ -18,6 +18,13 @@ Claude Code.
 
 Precisa do [Node.js](https://nodejs.org) 18 ou mais novo.
 
+**Atalho (macOS):** dê dois cliques em **`Abrir AXIS Labs.command`** — ele sobe
+o escritório e abre o navegador sozinho. Se o Mac bloquear na primeira vez,
+clique com o botão direito no arquivo e escolha **Abrir**. Para desligar, feche
+a janela do Terminal que ele abriu.
+
+Ou, pelo Terminal:
+
 ```bash
 npm start
 ```
